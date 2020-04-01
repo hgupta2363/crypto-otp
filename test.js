@@ -14,7 +14,7 @@ var Bitmex = new bitmex(
 // Bitmex.getPositions();
 
 var data = { symbol: "XBTUSD", orderQty: 1, price: 5900, ordType: "Limit" };
-var data1={orderID:"lsaskas"}
+
 var wallet = { currency: "XBt" };
 var ticker = { symbols: "tBTCUSD" };
 var bitwallet = {};
@@ -23,8 +23,8 @@ async function test() {
 
   //   var response = await Bitmex.postOrder(data);
   //   var response = await Bitfinex.postWallets(bitwallet);
- var response1= await Bitmex.deleteOrder(data1);
-  console.log(response1);
+ var response= await Bitmex.deleteOrder(data);
+  console.log(response1;
 }
 
 test();
